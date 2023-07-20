@@ -47,6 +47,22 @@ list1 = [1, 2, 3, 4]
 list2 = [2, 3, 4, 5, 6]
 list3 = [5, 6, 7]
 # Finde heraus welche Liste die längste ist (es können auch mehrere Listen die längsten sein)
+laengen = [len(list1), len(list2), len(list3)]
+laengen.sort()
+laengste = laengen[-1]
+if len(list1) == laengste:
+	print(list1)
+if len(list2) == laengste:
+	print(list2)
+if len(list3) == laengste:
+	print(list3)
 
 # Übung 2
 # Nimm die oberen drei Listen und überprüfe ob eine der Listen eine der drei Zahlen enthält: 3, 7, 10
+kombi = list1 + list2 + list3
+if 3 in kombi:
+	print("3 enthalten")
+if 7 in kombi:
+	print("7 enthalten")
+if 10 in kombi:
+	print("10 enthalten")
